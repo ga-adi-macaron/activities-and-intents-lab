@@ -29,7 +29,8 @@ The main activity should be laid out as follows:
 
 * The app should have a button that submits the data and starts the Result Activity.
 
-	* If this is pressed and an edittext is not filled out, that edit text must show an error (via [EditText.setError()](http://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence))).
+	* If this is pressed and an EditText is not filled out, the user should be notified that they must fill out all the inputs, and the app should not move to the next activity
+	* One option for notifying the user is by setting an error message on the empty EditText via [EditText.setError()](http://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)).
 
 
 * The Result Activity already takes the words you previously entered, and inserts them into the madlibs template of your choice. You have to provide the 6 words, passed as extras to the activity when starting it.
